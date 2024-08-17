@@ -1,0 +1,86 @@
+.calendarWrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+  margin: 20px;
+}
+
+.dayBox {
+  border: 1px solid #ddd;
+  padding: 15px;
+  min-height: 120px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dayBox:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dayBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #007bff;
+  border-radius: 8px 8px 0 0;
+}
+
+.eventList {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.eventLink {
+  color: #007bff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.eventLink:hover {
+  color: #0056b3;
+}
+
+.filterWrapper {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.filterLabel {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.filterSelect {
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 1em;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.filterSelect:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 91, 179, 0.5);
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .calendarWrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
