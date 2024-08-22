@@ -9,4 +9,4 @@ A React application for viewing and managing events on a calendar. This app allo
 - Add, edit, and delete events.
 - Responsive design for various screen sizes.
 
-Live Demo- https://stunning-gnome-4970c7.netlify.app/
+Live Demo- https://effulgent-klepon-b1faf8.netlify.app/
