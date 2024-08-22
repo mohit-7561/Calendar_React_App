@@ -1,0 +1,20 @@
+.calendarHeader {
+  color: #ffffff; 
+  font-size: 26px; 
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #007bff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  border: 2px solid #0056b3; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+  transition: background-color 0.3s, transform 0.3s; 
+}
+
+.calendarHeader:hover {
+  background-color: #0056b3; 
+  transform: scale(1);
+}
